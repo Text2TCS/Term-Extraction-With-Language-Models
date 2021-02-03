@@ -1,7 +1,7 @@
 # Term-Extraction-With-Language-Models
-##Description
+## Description
 
-##Requirements
+## Requirements
 * transformers v.4.2.2
 * torch v.1.7.0+cu101
 * sentencepiece v.0.1.95
@@ -13,11 +13,11 @@
 * numpy v.1.19.5
 
 
-##Dataset
+## Dataset
 
-##Hyperparameter
+## Hyperparameter
 
-##Reference
+## Reference
 
 
 
