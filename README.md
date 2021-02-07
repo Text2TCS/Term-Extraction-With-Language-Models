@@ -1,5 +1,6 @@
 # Term-Extraction-With-Language-Models
 ## Description
+This repository contains the scripts used to finetune XLM-RoBERTa for the termextraction task on the ACTER dataset (https://github.com/AylaRT/ACTER). One model version is used as a token classifier deciding for each single token of an input sequence simultaneously if it is a term or a continuation of a term. The other model version is a sequence classifier that decides for a given candidate term and a context in which it appears whether it is a term or not. 
 
 ## Requirements
 * transformers v.4.2.2
@@ -11,9 +12,6 @@
 * sacremoses v.0.0.43
 * pandas v.1.1.5
 * numpy v.1.19.5
-
-
-## Dataset
 
 ## Results
 
