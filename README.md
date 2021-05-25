@@ -1,4 +1,8 @@
 # Term-Extraction-With-Language-Models
+
+## Reference
+Coming soon
+
 ## Description
 This repository contains the scripts used to finetune XLM-RoBERTa for the termextraction task on the ACTER dataset (https://github.com/AylaRT/ACTER). One model version is used as a token classifier deciding for each single token of an input sequence simultaneously if it is a term or a continuation of a term. The other model version is a sequence classifier that decides for a given candidate term and a context in which it appears whether it is a term or not. 
 
@@ -15,7 +19,7 @@ This repository contains the scripts used to finetune XLM-RoBERTa for the termex
 
 ## Results
 
-F1 Scores of the trained models.
+### F1 Scores on ACTER
 
 Training | Test | Sequence Classifier | Token Classifier
 ------------ | ------------- | -------------|-------------
@@ -34,24 +38,28 @@ FR | NL | 56.1 | 61.4
 NL | NL | 48.5 | 69.6
 ALL | NL | 56.0 | 67.8
 
+### F1 Scores on ACL RD-TEC 2.0 
+Data Type | Token Classifier | 
+------------ | ------------- |
+Annotator 1 | 75.8 | 
+Annotator 2 | 80.0 |
 
-
-## Hyperparameter
+## Hyperparameters
 
 ### Sequence Classifier
 * optimizer: Adam
 * learning rate: 2e-5
-* batch size: 64
-* epochs: 3
+* batch size: 32
+* epochs: 4
 
 ### Token Classifier 
 * optimizer: Adam
 * learning rate: 2e-5
 * batch size: 8
-* epochs: 2 (load best model at the end evaluating the model every 100 steps)
+* epochs: Load best model at the end, evaluating the model every 100 steps
 
 
-## Reference
+
 
 
 
